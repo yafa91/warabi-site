@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — WARABI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-hero {
+      padding: 120px 6vw 60px;
+      background: linear-gradient(135deg, rgba(0,122,255,0.06) 0%, transparent 60%);
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .contact-hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: #0a0a0a;
+      margin-bottom: 12px;
+    }
+    .contact-hero p {
+      color: #8E8E93;
+      font-size: 0.95rem;
+    }
+    .contact-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 6vw 100px;
+    }
+    .contact-form {
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      padding: 40px;
+    }
+    .contact-form h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #0a0a0a;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #0a0a0a;
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: #0a0a0a;
+      background: #ffffff;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #007AFF;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .form-submit {
+      width: 100%;
+      background: #007AFF;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,122,255,0.3);
+    }
+    .update-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0,122,255,0.08);
+      border: 1px solid rgba(0,122,255,0.2);
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      color: #007AFF;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a class="nav-logo" href="index.html">WARABI</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close" id="menuClose">✕</button>
+    <ul class="menu-links">
+      <li><a href="index.html" class="menu-link">Accueil</a></li>
+      <li><a href="index.html" class="menu-link">Fonctionnalités</a></li>
+      <li><a href="index.html" class="menu-link">Télécharger</a></li>
+      <li><a href="index.html" class="menu-link">FAQ</a></li>
+    </ul>
+    <a href="index.html" class="menu-cta">Télécharger l'app →</a>
+  </div>
+
+  <!-- HERO -->
+  <div class="contact-hero" style="padding-top: 110px;">
+    <div class="update-badge">💬 Nous sommes là pour vous</div>
+    <h1>Contactez-nous</h1>
+    <p>Une question ? Un problème ? Notre équipe est à votre écoute</p>
+  </div>
+
+  <!-- CONTENU -->
+  <div class="contact-content">
+
+    <!-- FORMULAIRE -->
+    <div class="contact-form">
+      <h2>Envoyez-nous un message</h2>
+      
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom">
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required placeholder="votre@email.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <select id="subject" name="subject" required>
+            <option value="">Sélectionnez un sujet</option>
+            <option value="question">Question générale</option>
+            <option value="support">Support technique</option>
+            <option value="conducteur">Devenir conducteur</option>
+            <option value="paiement">Problème de paiement</option>
+            <option value="securite">Signalement sécurité</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Décrivez votre demande..."></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Envoyer le message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo" style="font-size:1.3rem; color:#007AFF;">WARABI</span>
+      <p>© 2026 WARABI. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="legal.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuClose = document.getElementById('menuClose');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      menuOverlay.classList.toggle('open');
+    });
+    menuClose.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      menuOverlay.classList.remove('open');
+    });
+  </script>
+
+</body>
+</html>

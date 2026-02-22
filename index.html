@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WARABI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="nav-logo" href="#">WARABI</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close" id="menuClose">✕</button>
+    <ul class="menu-links">
+      <li><a href="#" class="menu-link" data-section="accueil">Accueil</a></li>
+      <li><a href="#" class="menu-link" data-section="fonctionnalites">Fonctionnalités</a></li>
+      <li><a href="#" class="menu-link" data-section="telecharger">Télécharger</a></li>
+      <li><a href="#" class="menu-link" data-section="faq">FAQ</a></li>
+    </ul>
+    <a href="#" class="menu-cta" data-section="telecharger">Télécharger l'app →</a>
+  </div>
+
+  <!-- PAGE ACCUEIL -->
+  <section class="section active" id="accueil">
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <h1 class="hero-title">
+          Bougez <span class="highlight">malin</span>,<br/>
+          dépensez <span class="highlight-green">moins</span>.
+        </h1>
+        <p class="hero-sub">
+          WARABI connecte passagers et conducteurs<br/>
+          pour des trajets simples, rapides et abordables.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn-primary" data-section="telecharger">Télécharger gratuitement</a>
+          <a href="#" class="btn-ghost" data-section="fonctionnalites">Comment ça marche ↓</a>
+        </div>
+     
+      </div>
+    </div>
+
+    <!-- CARDS POURQUOI -->
+    <div class="why-section">
+      <p class="section-tag">Pourquoi WARABI ?</p>
+      <h2 class="section-title">Simple. Rapide. Économique.</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon blue">🛡️</div>
+          <h3>Sécurisé</h3>
+          <p>Profils vérifiés, permis contrôlés et notation après chaque trajet.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">💸</div>
+          <h3>Prix juste</h3>
+          <p>Le prix est calculé automatiquement selon la distance et le temps de trajet.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon blue">⚡</div>
+          <h3>Instantané</h3>
+          <p>Conducteur trouvé en secondes. Suivi GPS en temps réel.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon green">🤝</div>
+          <h3>Communauté</h3>
+          <p>Une communauté qui grandit chaque jour. Rejoignez les premiers utilisateurs WARABI !</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION SÉCURITÉ FEMMES -->
+    <div class="women-section">
+      <div class="women-text">
+        <h2 class="section-title" style="text-align:left; margin-bottom: 16px;">
+          Les femmes choisissent<br/><span class="highlight">leur conducteur</span>.
+        </h2>
+        <p class="women-desc">
+          Sur WARABI, les femmes ont le contrôle total. Avant de confirmer une course,
+          elles peuvent choisir uniquement des conductrices — ou laisser ouvert à tous.
+          Parce que se déplacer doit rester une liberté, pas une prise de risque.
+        </p>
+        <div class="women-chips">
+          <div class="chip chip-blue">👩 Conductrices uniquement</div>
+          <div class="chip chip-grey">👥 Tous les conducteurs</div>
+        </div>
+      </div>
+      <div class="women-visual">
+        <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg" class="women-svg">
+          <rect width="400" height="340" rx="24" fill="#f0f7ff"/>
+          <circle cx="320" cy="60" r="80" fill="rgba(0,122,255,0.07)"/>
+          <circle cx="80" cy="280" r="60" fill="rgba(52,199,89,0.07)"/>
+          <ellipse cx="140" cy="230" rx="52" ry="70" fill="#007AFF"/>
+          <ellipse cx="140" cy="105" rx="38" ry="36" fill="#FBBFA0"/>
+          <ellipse cx="140" cy="82" rx="38" ry="22" fill="#3D2C2C"/>
+          <ellipse cx="110" cy="105" rx="12" ry="28" fill="#3D2C2C"/>
+          <ellipse cx="170" cy="105" rx="12" ry="28" fill="#3D2C2C"/>
+          <circle cx="128" cy="108" r="4" fill="#3D2C2C"/>
+          <circle cx="152" cy="108" r="4" fill="#3D2C2C"/>
+          <path d="M132 122 Q140 130 148 122" stroke="#c0705a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="92" y="190" width="96" height="28" rx="14" fill="#34C759"/>
+          <text x="140" y="209" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" font-weight="bold">Conductrice ✓</text>
+          <ellipse cx="270" cy="230" rx="52" ry="70" fill="#34C759"/>
+          <ellipse cx="270" cy="105" rx="38" ry="36" fill="#FBBFA0"/>
+          <ellipse cx="270" cy="78" rx="40" ry="18" fill="#1a1a2e"/>
+          <path d="M232 90 Q228 140 240 160" stroke="#1a1a2e" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <path d="M308 90 Q312 140 300 160" stroke="#1a1a2e" stroke-width="14" fill="none" stroke-linecap="round"/>
+          <circle cx="258" cy="108" r="4" fill="#3D2C2C"/>
+          <circle cx="282" cy="108" r="4" fill="#3D2C2C"/>
+          <path d="M262 122 Q270 130 278 122" stroke="#c0705a" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <rect x="222" y="190" width="96" height="28" rx="14" fill="#007AFF"/>
+          <text x="270" y="209" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" font-weight="bold">Passagère ✓</text>
+          <path d="M192 150 Q205 135 218 150" stroke="#007AFF" stroke-width="2.5" fill="none" stroke-dasharray="5,4" stroke-linecap="round"/>
+          <circle cx="205" cy="138" r="14" fill="white" stroke="#007AFF" stroke-width="2"/>
+          <text x="205" y="143" text-anchor="middle" font-family="sans-serif" font-size="14">🤝</text>
+          <rect x="80" y="292" width="240" height="32" rx="16" fill="white" stroke="rgba(0,122,255,0.2)" stroke-width="1.5"/>
+          <text x="200" y="313" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#007AFF" font-weight="600">Elle choisit. Elle décide. Elle bouge.</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- SECTION AVIS CLIENTS -->
+    <div class="reviews-section">
+      <p class="section-tag">Ce qu'ils en pensent</p>
+      <h2 class="section-title">Nos utilisateurs adorent WARABI</h2>
+      <div class="reviews-carousel">
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Application super simple à utiliser. J'ai trouvé un conducteur en moins de 2 minutes. Prix très correct !"</p>
+          <div class="review-author">
+            <div class="review-avatar">👨</div>
+            <div class="review-info">
+              <strong>Thomas M.</strong>
+              <span>Passager</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"En tant que femme, le fait de pouvoir choisir une conductrice me rassure énormément. Merci WARABI pour cette option !"</p>
+          <div class="review-author">
+            <div class="review-avatar">👩</div>
+            <div class="review-info">
+              <strong>Sarah B.</strong>
+              <span>Passagère</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Je covoiture le soir en rentrant du travail, j'aime bien être avec quelqu'un dans la voiture."</p>
+          <div class="review-author">
+            <div class="review-avatar">👨</div>
+            <div class="review-info">
+              <strong>Ahmed M.</strong>
+              <span>Conducteur</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Interface claire, paiement rapide, conducteurs sympas. Que demander de plus ? Bravo à l'équipe WARABI."</p>
+          <div class="review-author">
+            <div class="review-avatar">👨</div>
+            <div class="review-info">
+              <strong>Marc D.</strong>
+              <span>Passager</span>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA SOUS LES AVIS -->
+      <div style="text-align:center; padding-top: 50px;">
+        <a href="#" class="btn-primary" data-section="telecharger">Télécharger gratuitement</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PAGE FONCTIONNALITÉS -->
+  <section class="section" id="fonctionnalites">
+    <div class="feat-top">
+      <div class="hero-bg"></div>
+      <div class="feat-top-inner">
+        <div class="badge">✨ Fonctionnalités</div>
+        <h1 class="hero-title" style="font-size:clamp(2.2rem,5vw,3.8rem)">
+          Tout ce dont vous<br/><span class="highlight">avez besoin</span>
+        </h1>
+      </div>
+    </div>
+    <div class="feat-section">
+      <div class="feat-block">
+        <div class="feat-text">
+          <span class="feat-tag blue-tag">👤 Passager</span>
+          <h2>Réservez en<br/>quelques secondes</h2>
+          <p>Entrez votre destination, choisissez votre conducteur et suivez votre trajet en temps réel.</p>
+          <ul class="feat-list">
+            <li>✅ Recherche instantanée de conducteurs</li>
+            <li>✅ Suivi GPS en temps réel</li>
+            <li>✅ Paiement sécurisé depuis l'app</li>
+            <li>✅ Historique de tous vos trajets</li>
+          </ul>
+        </div>
+        <div class="feat-visual blue-glow">
+          <div class="phone-mock">
+            <div class="phone-screen">
+              <div class="mock-header"><span class="mock-logo">WARABI</span></div>
+              <div class="mock-search">📍 Entrez votre destination...</div>
+              <div class="mock-card">
+                <div class="mock-avatar">👤</div>
+                <div class="mock-info"><strong>Jean D.</strong><span>⭐ 4.9 · 2 min</span></div>
+                <div class="mock-price">12€</div>
+              </div>
+              <div class="mock-card">
+                <div class="mock-avatar">👤</div>
+                <div class="mock-info"><strong>Marie L.</strong><span>⭐ 5.0 · 4 min</span></div>
+                <div class="mock-price">10€</div>
+              </div>
+              <div class="mock-btn-blue">Réserver</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-block reverse">
+        <div class="feat-text">
+          <span class="feat-tag green-tag">🚗 Conducteur</span>
+          <h2>Gagnez de l'argent<br/>à votre rythme</h2>
+          <p>Activez le mode conducteur quand vous le souhaitez. Gérez vos courses et vos gains.</p>
+          <ul class="feat-list">
+            <li>✅ Mode conducteur on/off instantané</li>
+            <li>✅ Retirez vos gains sous 48h</li>
+            <li>✅ Tableau de bord de vos performances</li>
+          </ul>
+        </div>
+        <div class="feat-visual green-glow">
+          <div class="phone-mock">
+            <div class="phone-screen">
+              <div class="mock-header">
+                <span class="mock-logo">WARABI</span>
+                <span class="mock-badge-green">Actif</span>
+              </div>
+              <div class="mock-stats-row">
+                <div class="mock-stat"><strong>3/5</strong><span>Courses</span></div>
+                <div class="mock-stat"><strong>47€</strong><span>Gains</span></div>
+                <div class="mock-stat"><strong>5.0⭐</strong><span>Note</span></div>
+              </div>
+              <div class="mock-demand">
+                <div class="mock-demand-head"><strong>Sophie M.</strong><span class="mock-price-green">18€</span></div>
+                <div class="mock-demand-addr">📍 Paris 11e → Vincennes</div>
+                <div class="mock-demand-info">2 passagers · 8,2 km</div>
+              </div>
+              <div class="mock-btn-green">Accepter la course</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE TÉLÉCHARGER -->
+  <section class="section" id="telecharger">
+    <div class="dl-section">
+      <div class="hero-bg"></div>
+      <div class="dl-inner">
+        <div class="badge">📱 Application mobile</div>
+        <h1 class="hero-title">Prêt à<br/><span class="highlight">démarrer ?</span></h1>
+        <p class="hero-sub">Téléchargez WARABI gratuitement<br/>et effectuez votre premier trajet dès aujourd'hui.</p>
+        <div class="dl-btns">
+          <a href="#" class="dl-btn">
+            <span class="dl-icon">🍎</span>
+            <div class="dl-text"><small>Télécharger sur</small><strong>App Store</strong></div>
+          </a>
+          <a href="#" class="dl-btn">
+            <span class="dl-icon">▶</span>
+            <div class="dl-text"><small>Disponible sur</small><strong>Google Play</strong></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE FAQ -->
+  <section class="section" id="faq">
+    <div class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-inner" style="min-height: 340px;">
+        <div class="badge">❓ Questions fréquentes</div>
+        <h1 class="hero-title" style="font-size:clamp(2.2rem,5vw,3.8rem)">
+          On répond à<br/><span class="highlight">vos questions</span>
+        </h1>
+      </div>
+    </div>
+    <div class="faq-section">
+      <div class="faq-categories">
+        <button class="faq-cat active" data-cat="all">Toutes</button>
+        <button class="faq-cat" data-cat="client">Client</button>
+        <button class="faq-cat" data-cat="conducteur">Conducteur</button>
+        <button class="faq-cat" data-cat="paiement">Paiement</button>
+        <button class="faq-cat" data-cat="securite">Sécurité</button>
+      </div>
+      <div class="faq-group" data-cat="client">
+        <p class="faq-group-title">👤 Client</p>
+        <div class="faq-item">
+          <button class="faq-question">Comment trouver un conducteur ? <span>+</span></button>
+          <div class="faq-answer">Entrez votre adresse de départ et votre destination, notre système vous trouvera un conducteur disponible près de vous en quelques minutes.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Puis-je annuler une course ? <span>+</span></button>
+          <div class="faq-answer">Oui, vous pouvez annuler depuis l'écran de suivi de course. À noter qu'au bout de la 3ème annulation, des frais s'appliquent.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment suivre mon conducteur en temps réel ? <span>+</span></button>
+          <div class="faq-answer">Vous pouvez suivre votre conducteur en temps réel directement depuis l'écran d'accueil de l'application, dès qu'il a accepté votre course.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Puis-je réserver une course à l'avance ? <span>+</span></button>
+          <div class="faq-answer">Oui, WARABI vous permet de planifier vos trajets à l'avance. Sélectionnez l'option "Réserver pour plus tard" lors de votre demande et choisissez l'heure souhaitée. Parfait pour ne jamais rater un rendez-vous important.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment noter mon conducteur ? <span>+</span></button>
+          <div class="faq-answer">À la fin de chaque trajet, une fenêtre de notation apparaît automatiquement. Donnez une note de 1 à 5 étoiles et laissez un commentaire si vous le souhaitez. Votre avis aide toute la communauté WARABI.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Puis-je voyager avec des bagages ? <span>+</span></button>
+          <div class="faq-answer">Vous pouvez préciser vos besoins (bagages volumineux...) lors de votre demande de course. Assurez-vous de le mentionner dans les notes de réservation.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Combien de passagers peut-on être dans le même véhicule ? <span>+</span></button>
+          <div class="faq-answer">Cela dépend du véhicule du conducteur. En général, les véhicules acceptent 1 à 4 passagers.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Que faire si mon conducteur ne se présente pas ? <span>+</span></button>
+          <div class="faq-answer">Si votre conducteur ne se présente pas, vous pouvez annuler la course. À noter que des frais peuvent s'appliquer en cas d'annulation tardive ou d'abus d'annulation.</div>
+        </div>
+      </div>
+      <div class="faq-group" data-cat="conducteur">
+        <p class="faq-group-title">🚗 Conducteur</p>
+        <div class="faq-item">
+          <button class="faq-question">Comment devenir conducteur ? <span>+</span></button>
+          <div class="faq-answer">Activez le mode conducteur depuis le menu accueil. Avant votre premier trajet, envoyez vos documents (permis, justificatif de domicile) et remplissez les informations de votre véhicule.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Quand suis-je payé ? <span>+</span></button>
+          <div class="faq-answer">Vos gains sont ajoutés à votre solde après chaque trajet terminé. Vous pouvez effectuer un retrait vers votre compte bancaire à tout moment.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Quel type de véhicule est accepté ? <span>+</span></button>
+          <div class="faq-answer">Tout véhicule en règle est accepté : citadine, berline, SUV, monospace... Votre véhicule doit avoir moins de 15 ans, être assuré et avoir passé son contrôle technique. Les véhicules électriques et hybrides sont les bienvenus.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Puis-je refuser une course ? <span>+</span></button>
+          <div class="faq-answer">Oui, vous êtes complètement libre d'accepter ou de refuser chaque demande de course. Aucune pénalité n'est appliquée pour un refus. WARABI respecte votre autonomie et votre emploi du temps.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Y a-t-il un maximum de courses à effectuer par jour ? <span>+</span></button>
+          <div class="faq-answer">Oui, vous ne pouvez effectuer plus de 5 courses par jour.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment fonctionne la commission de 22% ? <span>+</span></button>
+          <div class="faq-answer">Sur chaque course, WARABI prélève 22% du montant total. Par exemple, pour une course à 20€, vous recevez 15,60€ net. Cette commission couvre les frais de la plateforme, l'assurance et le support. C'est l'une des commissions les plus basses du marché.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Quelle est l'assurance requise ? <span>+</span></button>
+          <div class="faq-answer">Vous devez avoir une assurance personnelle valide. WARABI ne couvre pas les risques liés à votre véhicule.</div>
+        </div>
+      </div>
+      <div class="faq-group" data-cat="paiement">
+        <p class="faq-group-title">💳 Paiement</p>
+        <div class="faq-item">
+          <button class="faq-question">Le paiement est-il sécurisé ? <span>+</span></button>
+          <div class="faq-answer">Oui, tous les paiements transitent par Stripe, leader mondial du paiement en ligne. Vos données bancaires ne sont jamais stockées sur nos serveurs.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment retirer mes gains ? <span>+</span></button>
+          <div class="faq-answer">Rendez-vous dans votre portefeuille, cliquez sur "Retrait" et indiquez le montant souhaité. Les fonds arrivent sous 48h sur votre compte bancaire.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">C'est gratuit à télécharger ? <span>+</span></button>
+          <div class="faq-answer">Oui, le téléchargement de l'application est 100% gratuit.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Quels modes de paiement sont acceptés ? <span>+</span></button>
+          <div class="faq-answer">WARABI accepte les cartes bancaires (Visa, Mastercard, American Express) et les paiements en espèces.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment obtenir un reçu pour ma course ? <span>+</span></button>
+          <div class="faq-answer">Un reçu détaillé est automatiquement envoyé par e-mail après chaque trajet. Vous pouvez aussi retrouver l'historique complet dans la section "Mes trajets" de l'application.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment est calculé le prix d'une course ? <span>+</span></button>
+          <div class="faq-answer">Le prix est calculé en fonction de la distance, du temps de trajet estimé et de la demande au moment de la réservation. Le tarif vous est toujours affiché avant de confirmer — aucune mauvaise surprise à l'arrivée.</div>
+        </div>
+      </div>
+      <div class="faq-group" data-cat="securite">
+        <p class="faq-group-title">🛡️ Sécurité</p>
+        <div class="faq-item">
+          <button class="faq-question">Les conducteurs sont-ils vérifiés ? <span>+</span></button>
+          <div class="faq-answer">Oui, tous les conducteurs doivent fournir un permis de conduire valide et un justificatif de domicile vérifiés par notre équipe avant d'accepter des courses.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Les femmes peuvent-elles choisir leur conductrice ? <span>+</span></button>
+          <div class="faq-answer">Oui ! WARABI propose un filtre exclusif permettant aux femmes de choisir uniquement des conductrices pour leurs trajets. La sécurité est notre priorité.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Que faire en cas de problème pendant la course ? <span>+</span></button>
+          <div class="faq-answer">Vous pouvez contacter le support directement depuis l'application. En cas d'urgence, utilisez le bouton d'assistance disponible sur l'écran de suivi.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Comment signaler un conducteur ou un passager ? <span>+</span></button>
+          <div class="faq-answer">À la fin de chaque trajet, vous pouvez signaler un comportement inapproprié directement depuis l'écran de notation. Notre équipe traite chaque signalement sous 24h.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Mes données personnelles sont-elles partagées ? <span>+</span></button>
+          <div class="faq-answer">Non. Vos données personnelles (numéro de téléphone, adresse, coordonnées bancaires) ne sont jamais communiquées aux autres utilisateurs. Conducteurs et passagers ne voient que votre prénom et votre photo de profil.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Puis-je partager ma position avec un proche pendant un trajet ? <span>+</span></button>
+          <div class="faq-answer">Oui ! Depuis l'écran de suivi, appuyez sur "Partager ma position" pour envoyer un lien de suivi en temps réel à un ami ou un proche. Un moyen simple de voyager l'esprit tranquille.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Que se passe-t-il si j'oublie un objet dans le véhicule ? <span>+</span></button>
+          <div class="faq-answer">Rendez-vous dans votre historique de trajets, sélectionnez la course concernée et utilisez la fonction "message" pour contacter directement le conducteur. Si aucune réponse sous 48h, notre support prend le relais. À noter que vous avez 72h après la fin du trajet pour signaler un objet perdu.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo" style="font-size:1.3rem; color:#007AFF;">WARABI</span>
+      <p>© 2026 WARABI. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="legal.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
