@@ -697,15 +697,15 @@ body {
 .inline-dl-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;   
+  gap: 80px;                 
   padding: 80px 60px;
   background: #f0f2f5;
   margin: 0;
 }
 
 .inline-dl-text {
-  flex: 1;
+  flex: 0 0 auto;
   max-width: 480px;
 }
 
@@ -751,7 +751,7 @@ body {
 }
 
 .inline-dl-mockup {
-  flex: 1;
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
