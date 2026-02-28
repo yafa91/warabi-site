@@ -785,4 +785,9 @@ body {
   align-items: center;
   background: transparent;
 }
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 }
