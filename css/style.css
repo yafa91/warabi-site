@@ -812,5 +812,5 @@ body {
   .inline-dl-text .section-title {
     text-align: center !important;
   }
-  .mockup-img { max-width: 200px; }
+  .mockup-img { max-width: 200px; margin-left: 40px; }
 }
