@@ -693,3 +693,96 @@ body {
     max-width: 220px;
   }
 }
+/* ========== SECTION TÉLÉCHARGER INLINE (accueil) ========== */
+.inline-dl-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 60px;
+  background: #f0f2f5;
+  margin: 0;
+}
+
+.inline-dl-text {
+  flex: 1;
+  max-width: 480px;
+}
+
+.inline-dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: #000;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.inline-dl-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.apple-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.inline-dl-btn-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.inline-dl-btn-text small {
+  font-size: 11px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+
+.inline-dl-btn-text strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.inline-dl-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  box-shadow: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .inline-dl-section {
+    flex-direction: column-reverse;
+    padding: 50px 24px;
+    text-align: center;
+  }
+  .inline-dl-text {
+    max-width: 100%;
+  }
+  .mockup-img {
+    max-width: 200px;
+  }
+.inline-dl-mockup {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+}
