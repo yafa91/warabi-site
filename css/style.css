@@ -718,8 +718,11 @@ body {
     text-align: center;
     align-items: center;
   }
+  .inline-dl-section .section-title {
+    text-align: center !important; 
+  }
   .inline-dl-mockup {
-    order: -1;  
+    order: -1;
     flex: 0 0 auto;
     display: flex;
     justify-content: center;
