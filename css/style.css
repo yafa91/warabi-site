@@ -807,6 +807,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: transparent;
   }
   .inline-dl-text .section-title {
     text-align: center !important;
