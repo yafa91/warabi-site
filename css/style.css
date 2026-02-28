@@ -479,7 +479,7 @@ body {
   align-items: center;
   padding: 24px;
   border-radius: var(--radius-lg);
-  background: var(--grey-light);
+  background: transparent;
 }
 
 /* ── DOWNLOAD SECTION ── */
