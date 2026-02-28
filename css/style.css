@@ -712,19 +712,17 @@ body {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
-  .feat-block, .feat-block.reverse { grid-template-columns: 1fr; direction: ltr; }
-  .hero-stats { gap: 20px; }
-  .stat-n { font-size: 1.4rem; }
-  .footer-inner { flex-direction: column; text-align: center; }
-  .women-section { grid-template-columns: 1fr; }
-  .women-visual { order: -1; }
-  .review-card { min-width: 220px; max-width: 220px; }
   .inline-dl-section {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 50px 24px;
     text-align: center;
+    align-items: center;
   }
-  .inline-dl-text { max-width: 100%; }
+   .inline-dl-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .inline-dl-mockup {
     flex: 0 0 auto;
     display: flex;
