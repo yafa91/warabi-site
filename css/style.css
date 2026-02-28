@@ -95,7 +95,7 @@ body {
   cursor: pointer;
   transition: color 0.2s;
 }
-.menu-close:hover { color: #ffffff; }
+.menu-close:hover { color: #0a0a0a; }
 
 .menu-links {
   list-style: none;
@@ -205,7 +205,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.menu-close:hover { color: #0a0a0a; }
+
 .hero-sub {
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--grey);
@@ -438,13 +438,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  .feat-block, .feat-block.reverse { grid-template-columns: 1fr; direction: ltr; }
-  .hero-stats { gap: 20px; }
-  .stat-n { font-size: 1.4rem; }
-  .footer-inner { flex-direction: column; text-align: center; }
-}
 /* ── FAQ ── */
 .faq-section {
   max-width: 750px;
@@ -497,6 +490,7 @@ body {
   max-height: 200px;
   padding: 0 24px 20px;
 }
+
 /* ── WOMEN SECTION ── */
 .women-section {
   display: grid;
@@ -542,10 +536,6 @@ body {
   box-shadow: 0 20px 60px rgba(0,122,255,0.1);
 }
 
-@media (max-width: 768px) {
-  .women-section { grid-template-columns: 1fr; }
-  .women-visual { order: -1; }
-}
 /* ── FAQ CATEGORIES ── */
 .faq-categories {
   display: flex;
@@ -595,6 +585,7 @@ body {
   color: #0a0a0a;
   margin-bottom: 16px;
 }
+
 /* ── REVIEWS SECTION ── */
 .reviews-section {
   padding: 100px 6vw;
@@ -603,7 +594,6 @@ body {
   border-top: 1px solid rgba(0,0,0,0.08);
   overflow: hidden;
 }
-
 .reviews-carousel {
   display: flex;
   gap: 20px;
@@ -613,11 +603,7 @@ body {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
-.reviews-carousel::-webkit-scrollbar {
-  display: none;
-}
-
+.reviews-carousel::-webkit-scrollbar { display: none; }
 .review-card {
   min-width: 260px;
   max-width: 260px;
@@ -629,17 +615,11 @@ body {
   transition: transform 0.25s, box-shadow 0.25s;
   flex-shrink: 0;
 }
-
 .review-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 60px rgba(0,0,0,0.1);
 }
-
-.review-stars {
-  font-size: 0.9rem;
-  margin-bottom: 12px;
-}
-
+.review-stars { font-size: 0.9rem; margin-bottom: 12px; }
 .review-text {
   color: #4a4a4a;
   font-size: 0.88rem;
@@ -650,13 +630,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-.review-author {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+.review-author { display: flex; align-items: center; gap: 10px; }
 .review-avatar {
   width: 38px;
   height: 38px;
@@ -668,47 +642,24 @@ body {
   font-size: 1.2rem;
   flex-shrink: 0;
 }
+.review-info { display: flex; flex-direction: column; gap: 2px; }
+.review-info strong { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.88rem; color: #0a0a0a; }
+.review-info span { font-size: 0.78rem; color: #8E8E93; }
 
-.review-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.review-info strong {
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 0.88rem;
-  color: #0a0a0a;
-}
-
-.review-info span {
-  font-size: 0.78rem;
-  color: #8E8E93;
-}
-
-@media (max-width: 768px) {
-  .review-card {
-    min-width: 220px;
-    max-width: 220px;
-  }
-}
-/* ========== SECTION TÉLÉCHARGER INLINE (accueil) ========== */
+/* ── SECTION TÉLÉCHARGER INLINE (accueil) ── */
 .inline-dl-section {
   display: flex;
   align-items: center;
-  justify-content: center;   
-  gap: 80px;                 
+  justify-content: center;
+  gap: 80px;
   padding: 80px 60px;
   background: #f0f2f5;
   margin: 0;
 }
-
 .inline-dl-text {
   flex: 0 0 auto;
   max-width: 480px;
 }
-
 .inline-dl-btn {
   display: inline-flex;
   align-items: center;
@@ -720,43 +671,36 @@ body {
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .inline-dl-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
-
 .apple-logo {
   width: 28px;
   height: 28px;
   object-fit: contain;
   filter: invert(1);
 }
-
 .inline-dl-btn-text {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
 }
-
 .inline-dl-btn-text small {
   font-size: 11px;
   opacity: 0.7;
   font-weight: 400;
 }
-
 .inline-dl-btn-text strong {
   font-size: 16px;
   font-weight: 700;
 }
-
 .inline-dl-mockup {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .mockup-img {
   max-width: 280px;
   width: 100%;
@@ -766,28 +710,28 @@ body {
   display: block;
 }
 
+/* ── RESPONSIVE ── */
 @media (max-width: 768px) {
+  .feat-block, .feat-block.reverse { grid-template-columns: 1fr; direction: ltr; }
+  .hero-stats { gap: 20px; }
+  .stat-n { font-size: 1.4rem; }
+  .footer-inner { flex-direction: column; text-align: center; }
+  .women-section { grid-template-columns: 1fr; }
+  .women-visual { order: -1; }
+  .review-card { min-width: 220px; max-width: 220px; }
   .inline-dl-section {
     flex-direction: column-reverse;
     padding: 50px 24px;
     text-align: center;
   }
-  .inline-dl-text {
-    max-width: 100%;
+  .inline-dl-text { max-width: 100%; }
+  .inline-dl-mockup {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
   }
-  .mockup-img {
-    max-width: 200px;
-  }
-.inline-dl-mockup {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-}
-@media (max-width: 768px) {
-  .hide-mobile {
-    display: none;
-  }
-}
+  .mockup-img { max-width: 200px; }
+  .hide-mobile { display: none; }
 }
