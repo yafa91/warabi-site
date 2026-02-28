@@ -718,18 +718,18 @@ body {
     text-align: center;
     align-items: center;
   }
-   .inline-dl-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .inline-dl-mockup {
+    order: -1;  
     flex: 0 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
   }
+  .inline-dl-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .mockup-img { max-width: 200px; }
-  
 }
