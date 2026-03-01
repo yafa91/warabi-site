@@ -803,7 +803,7 @@ body {
     gap: 32px;
     text-align: center;
   }
-  .inline-dl-mockup { order: -1; }
+  .inline-dl-mockup { order: -1; width: 100%; display: flex; justify-content: center; }
   .inline-dl-text {
     display: flex;
     flex-direction: column;
@@ -813,5 +813,5 @@ body {
   .inline-dl-text .section-title {
     text-align: center !important;
   }
-  .mockup-img { max-width: 200px; margin-left: 40px; }
+  .mockup-img { max-width: 200px; margin: 0 auto; display: block; width: 100%; }
 }
