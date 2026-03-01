@@ -815,3 +815,41 @@ body {
   }
   .mockup-img { max-width: 200px; margin: 0 auto; display: block; width: 100%; }
 }
+/* ── DRIVER SECTION ── */
+.driver-section {
+  background: var(--green-light);
+  padding: 80px 5vw;
+}
+.driver-inner {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.driver-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  box-shadow: var(--shadow);
+}
+.driver-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.driver-stat-div {
+  width: 1px;
+  height: 48px;
+  background: rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .driver-inner { grid-template-columns: 1fr; }
+}
