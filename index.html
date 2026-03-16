@@ -119,25 +119,6 @@
       </div>
     </div>
 
-<!-- SECTION PROGRAMME DE FIDÉLITÉ -->
-<div class="feat-section" style="margin-top: 0;">
-  <div class="feat-block" style="gap: 20px;">
-    <div class="feat-text">
-      <span class="feat-tag blue-tag">🎁 Fidélité</span>
-      <h2>Chaque trajet<br/>vous récompense</h2>
-      <p>Effectuez 6 trajets et recevez automatiquement 2€ crédités sur votre compte. Simple, transparent, sans conditions.</p>
-      <ul class="feat-list">
-        <li>✅ 2€ offerts tous les 6 trajets</li>
-        <li>✅ Progression visible en temps réel</li>
-        <li>✅ Récompense créditée automatiquement</li>
-      </ul>
-    </div>
-    <div class="feat-visual blue-glow">
-      <img src="images/fidelite.png" alt="Programme de fidélité WARABI" class="feat-screenshot" style="max-width: 260px; width: 100%; height: auto; border-radius: 24px; display: block; margin: 0 auto; padding-top: 80px;" />
-    </div>
-  </div>
-</div>
-
     <!-- SECTION SÉCURITÉ FEMMES -->
     <div class="women-section" style="background: #f5f5f5; border-radius: 24px; margin: 0 16px;">
       <div class="women-text">
@@ -269,7 +250,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Que faire si le prix payé est différent du prix affiché ? <span>+</span></button>
-          <div class="faq-answer">Le prix affiché avant la confirmation est le prix final. Si vous constatez une différence, contactez notre support via l'adresse <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0e7d7b7e7e617c7a4e796f7c6f6c67206f7e7e">[email&#160;protected]</a> en indiquant le numéro de votre course.</div>
+          <div class="faq-answer">Le prix affiché avant la confirmation est le prix final. Si vous constatez une différence, contactez notre support via l'adresse support@warabi.fr en indiquant le numéro de votre course.</div>
         </div>
       </div>
       <div class="faq-group" data-cat="conducteur">
@@ -316,7 +297,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Comment contacter le support en cas de litige avec un passager ? <span>+</span></button>
-          <div class="faq-answer">Envoyez un e-mail à <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee9d9b9e9e819c9aae998f9c8f8c87c08f9e9e">[email&#160;protected]</a> en précisant le numéro de course et la nature du litige. Notre équipe traite chaque signalement sous 24h et vous recontacte directement.</div>
+          <div class="faq-answer">Envoyez un e-mail à support@warabi.fr en précisant le numéro de course et la nature du litige. Notre équipe traite chaque signalement sous 24h et vous recontacte directement.</div>
         </div>
       </div>
       <div class="faq-group" data-cat="paiement">
@@ -347,7 +328,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question">Que faire si un paiement échoue ? <span>+</span></button>
-          <div class="faq-answer">En cas d'échec de paiement, vérifiez que votre carte est valide et que vous disposez de fonds suffisants. Vous pouvez réessayer directement depuis l'application. Si le problème persiste, contactez notre support à <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d6e686d6d726f695d6a7c6f7c7f74337c6d6d">[email&#160;protected]</a>.</div>
+          <div class="faq-answer">En cas d'échec de paiement, vérifiez que votre carte est valide et que vous disposez de fonds suffisants. Vous pouvez réessayer directement depuis l'application. Si le problème persiste, contactez notre support à support@warabi.fr.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Y a-t-il un solde minimum pour effectuer un retrait ? <span>+</span></button>
@@ -396,6 +377,17 @@
     </div>
   </section>
 
+  <!-- SECTION NEWSLETTER -->
+<div style="background: #0a0a0a; padding: 40px 32px; margin-top: 40px;">
+  <p style="font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700; color: #007AFF; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px;">Newsletter</p>
+  <h2 style="font-family: 'Syne', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: white; line-height: 1.15; margin-bottom: 24px; max-width: 400px;">L'appli qui bouge, les news qui suivent.</h2>
+  <div style="display: flex; align-items: center; background: transparent; border: 1.5px solid rgba(255,255,255,0.25); border-radius: 100px; padding: 6px 6px 6px 22px; max-width: 360px; gap: 8px;">
+    <input id="nl-email" type="email" placeholder="Votre email" style="flex: 1; background: transparent; border: none; outline: none; color: white; font-size: 0.9rem; font-family: 'DM Sans', sans-serif;" />
+    <button id="nl-btn" onclick="submitNewsletter()" style="background: #007AFF; color: white; border: none; border-radius: 100px; width: 44px; height: 44px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">→</button>
+  </div>
+  <p id="nl-msg" style="font-family: 'DM Sans', sans-serif; color: rgba(255,255,255,0.35); font-size: 0.75rem; margin-top: 12px;">Aucun spam. Désinscription en un clic.</p>
+</div>
+
   <footer class="footer">
     <div class="footer-inner">
       <span class="nav-logo" style="font-size:1.3rem; color:#007AFF;">WARABI</span>
@@ -410,5 +402,53 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <script>
+    async function submitNewsletter() {
+      const email = document.getElementById('nl-email').value.trim();
+      const msg = document.getElementById('nl-msg');
+      const btn = document.getElementById('nl-btn');
+
+      if (!email || !email.includes('@')) {
+        msg.style.color = '#ff3b30';
+        msg.textContent = '⚠️ Entrez un email valide.';
+        return;
+      }
+
+      btn.textContent = '...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://preprod.warabi.fr/api/newsletter/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email })
+        });
+
+        const data = await res.json();
+
+        if (data.success) {
+          msg.style.color = '#34C759';
+          msg.textContent = '✅ Merci ! Vous êtes bien inscrit(e).';
+          document.getElementById('nl-email').value = '';
+        } else {
+          msg.style.color = '#ff3b30';
+          msg.textContent = '❌ Une erreur est survenue. Réessayez.';
+        }
+      } catch (err) {
+        msg.style.color = '#ff3b30';
+        msg.textContent = '❌ Erreur de connexion. Réessayez.';
+      }
+
+      btn.textContent = '→';
+      btn.disabled = false;
+    }
+
+    // Permet aussi de valider avec la touche Entrée
+    document.getElementById('nl-email').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') submitNewsletter();
+    });
+  </script>
+
 </body>
 </html>
