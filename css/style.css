@@ -853,3 +853,10 @@ body {
 @media (max-width: 768px) {
   .driver-inner { grid-template-columns: 1fr; }
 }
+
+#nl-email::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  #nl-email {
+  color: white;
+}
+}
