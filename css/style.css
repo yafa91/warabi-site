@@ -855,8 +855,5 @@ body {
 }
 
 #nl-email::placeholder {
-  color: rgba(255, 255, 255, 0.5);
-  #nl-email {
-  color: white;
-}
+  color: rgba(0, 0, 0, 0.4);
 }
