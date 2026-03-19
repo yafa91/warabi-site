@@ -856,4 +856,10 @@ body {
 
 #nl-email::placeholder {
   color: rgba(0, 0, 0, 0.4);
+  @media (max-width: 768px) {
+  .social-row {
+    flex-direction: row !important;
+    gap: 24px !important;
+  }
+}
 }
