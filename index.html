@@ -84,7 +84,7 @@
       </div>
     </div>
 
-    <!-- SECTION FONCTIONNALITÉS (déplacée ici) -->
+    <!-- SECTION FONCTIONNALITÉS -->
     <div class="feat-section" id="fonctionnalites">
       <div class="feat-block">
         <div class="feat-text">
@@ -167,6 +167,13 @@
           <text x="200" y="313" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#007AFF" font-weight="600">Elle choisit. Elle décide. Elle bouge.</text>
         </svg>
       </div>
+    </div>
+
+    <!-- BOUTON CODE SECRET -->
+    <div style="text-align: center; margin: 40px 16px 20px;">
+      <a href="secret.html" style="display: inline-flex; align-items: center; gap: 10px; background: #007AFF; color: white; text-decoration: none; padding: 14px 28px; border-radius: 100px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.9rem;">
+         T'as un code secret ?
+      </a>
     </div>
 
   </section>
@@ -377,32 +384,32 @@
     </div>
   </section>
 
- <!-- SECTION NEWSLETTER -->
-<div style="background: #ffffff; padding: 40px 32px; margin-top: 40px; border-top: 1.5px solid rgba(0,0,0,0.06);">
-  <p style="font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700; color: #007AFF; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px;">Newsletter</p>
-  <h2 style="font-family: 'Syne', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: #0a0a0a; line-height: 1.15; margin-bottom: 24px; max-width: 400px;">L'appli qui bouge, les news qui suivent.</h2>
-  <div style="display: flex; align-items: center; background: transparent; border: 1.5px solid rgba(0,0,0,0.15); border-radius: 100px; padding: 6px 6px 6px 22px; max-width: 360px; gap: 8px;">
-    <input id="nl-email" type="email" placeholder="Votre email" style="flex: 1; background: transparent; border: none; outline: none; color: #0a0a0a; font-size: 0.9rem; font-family: 'DM Sans', sans-serif;" />
-    <button id="nl-btn" onclick="submitNewsletter()" style="background: #007AFF; color: white; border: none; border-radius: 100px; width: 44px; height: 44px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">→</button>
+  <!-- SECTION NEWSLETTER -->
+  <div style="background: #ffffff; padding: 40px 32px; margin-top: 40px; border-top: 1.5px solid rgba(0,0,0,0.06);">
+    <p style="font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700; color: #007AFF; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 12px;">Newsletter</p>
+    <h2 style="font-family: 'Syne', sans-serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: #0a0a0a; line-height: 1.15; margin-bottom: 24px; max-width: 400px;">L'appli qui bouge, les news qui suivent.</h2>
+    <div style="display: flex; align-items: center; background: transparent; border: 1.5px solid rgba(0,0,0,0.15); border-radius: 100px; padding: 6px 6px 6px 22px; max-width: 360px; gap: 8px;">
+      <input id="nl-email" type="email" placeholder="Votre email" style="flex: 1; background: transparent; border: none; outline: none; color: #0a0a0a; font-size: 0.9rem; font-family: 'DM Sans', sans-serif;" />
+      <button id="nl-btn" onclick="submitNewsletter()" style="background: #007AFF; color: white; border: none; border-radius: 100px; width: 44px; height: 44px; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">→</button>
+    </div>
+    <p id="nl-msg" style="font-family: 'DM Sans', sans-serif; color: rgba(0,0,0,0.4); font-size: 0.75rem; margin-top: 12px;">Aucun spam. Désinscription en un clic.</p>
   </div>
-  <p id="nl-msg" style="font-family: 'DM Sans', sans-serif; color: rgba(0,0,0,0.4); font-size: 0.75rem; margin-top: 12px;">Aucun spam. Désinscription en un clic.</p>
-</div>
 
   <footer class="footer">
     <div class="footer-inner">
       <span class="nav-logo" style="font-size:1.3rem; color:#007AFF;">WARABI</span>
-        <p>© 2026 WARABI. Tous droits réservés.</p>
+      <p>© 2026 WARABI. Tous droits réservés.</p>
       <div class="footer-links">
         <a href="legal.html">Mentions légales</a>
         <a href="cgu.html">CGU</a>
         <a href="confidentialite.html">Confidentialité</a>
         <a href="contact.html">Contact</a>
-<a href="secret.html">Code secret</a>
+        <a href="secret.html">Code secret</a>
       </div>
     </div>
   </footer>
 
-  <script></script>
+  <script src="js/main.js"></script>
 
   <script>
     async function submitNewsletter() {
@@ -445,7 +452,6 @@
       btn.disabled = false;
     }
 
-    // Permet aussi de valider avec la touche Entrée
     document.getElementById('nl-email').addEventListener('keydown', function(e) {
       if (e.key === 'Enter') submitNewsletter();
     });
