@@ -163,9 +163,9 @@
       <ul>
         <li><strong>« Application » ou « WARABI »</strong> : l'application mobile permettant de mettre en relation passagers et conducteurs.</li>
         <li><strong>« Utilisateur »</strong> : toute personne utilisant l'Application.</li>
-        <li><strong>« Passager »</strong> : l'Utilisateur qui réserve un trajet.</li>
-        <li><strong>« Conducteur »</strong> : l'Utilisateur qui réalise des trajets.</li>
-        <li><strong>« un trajet »</strong> : le service de covoiturage effectué.</li>
+        <li><strong>« Passager »</strong> : l'Utilisateur qui réserve un Trajet.</li>
+        <li><strong>« Conducteur »</strong> : l'Utilisateur qui réalise des Trajets.</li>
+        <li><strong>« Trajet »</strong> : le service de covoiturage effectué via l'Application.</li>
       </ul>
     </div>
 
@@ -209,15 +209,16 @@
       <h3>4.1 Passagers</h3>
       <p>Les passagers peuvent rechercher un conducteur, suivre leur trajet en temps réel et payer via l'app.</p>
       <h3>4.2 Conducteurs</h3>
-      <p>Les conducteurs peuvent activer le mode conducteur, accepter ou refuser des un trajets librement et retirer leurs gains à tout moment. Le nombre de un trajets est limité à <strong>5 un trajets par jour</strong>.</p>
+      <p>Les conducteurs peuvent activer le mode conducteur, accepter ou refuser des trajets librement et retirer leurs gains à tout moment. Le nombre de trajets est limité à <strong>5 trajets par jour</strong>.</p>
       <h3>4.3 Politique d'annulation</h3>
       <p>L'annulation d'un trajet est possible depuis l'écran de suivi.</p>
       <div class="legal-highlight-warning">
         <strong>Frais d'annulation :</strong> À partir de la <strong>3ème annulation</strong>, des frais de <strong>2€ TTC</strong> sont automatiquement prélevés sur le solde de l'utilisateur à chaque nouvelle annulation. Ces frais correspondent à une commission WARABI et ne sont pas remboursables. L'utilisateur en est informé avant de confirmer l'annulation.
       </div>
       <p>Les deux premières annulations sont gratuites.</p>
+      <p>Si l'annulation est effectuée par le conducteur, le passager est intégralement remboursé dans un délai de <strong>24h à 72h ouvrés</strong> selon sa banque.</p>
       <h3>4.4 Objets perdus</h3>
-      <p>En cas d'oubli d'un objet dans un véhicule, l'utilisateur dispose d'un délai de <strong>72h</strong> après la fin du trajet pour le signaler via la section "Centre d'aide". Passé ce délai, WARABI ne peut garantir la récupération de l'objet.</p>
+      <p>En cas d'oubli d'un objet dans un véhicule, l'utilisateur dispose d'un délai de <strong>48h</strong> après la fin du trajet pour le signaler via la section "Centre d'aide". Passé ce délai, WARABI ne peut garantir la récupération de l'objet.</p>
     </div>
 
     <div class="legal-section">
@@ -227,7 +228,7 @@
       <h3>5.2 Commission</h3>
       <p>WARABI prélève <strong>20% sur chaque trajet</strong>. Le conducteur reçoit 80% du montant total.</p>
       <h3>5.3 Paiement</h3>
-      <p>Les paiements en carte bancaire sont traités via <strong>Stripe</strong>. WARABI accepte les cartes bancaires (Visa, Mastercard, American Express) et les paiements en espèces.</p>
+      <p>Les paiements en carte bancaire sont traités via <strong>Stripe</strong>. WARABI accepte les cartes bancaires (Visa, Mastercard, American Express) et les paiements en espèces. Les paiements en espèces s'effectuent directement entre passager et conducteur. WARABI n'intervient pas dans cette transaction et ne peut en garantir la bonne exécution, mais WARABI garantira toujours le montant exact que vous devrez verser au conducteur.</p>
       <h3>5.4 Retrait des gains</h3>
       <p>Les conducteurs peuvent retirer leurs gains à tout moment depuis leur portefeuille. Les fonds sont virés sur le compte bancaire du conducteur dans un délai de <strong>48h ouvrées</strong> suivant la demande de retrait.</p>
     </div>
@@ -250,9 +251,8 @@
 
     <div class="legal-section">
       <h2>7. Responsabilité</h2>
-      <p>
-        WARABI n'est pas responsable des dommages survenant lors d'un trajet. En tant que plateforme de mise en relation, WARABI ne peut être tenu responsable des actes, omissions ou comportements des utilisateurs.
-      </p>
+      <p>WARABI agit en qualité de plateforme de mise en relation et ne saurait être tenu responsable des dommages directs ou indirects survenant lors d'un trajet, des actes ou omissions des utilisateurs, des pannes ou indisponibilités temporaires de l'application, ni de la perte ou du vol d'objets personnels.</p>
+      <p>WARABI s'engage en revanche à maintenir le bon fonctionnement de l'application et à rétablir l'accès dans les meilleurs délais en cas de panne ou d'indisponibilité.</p>
     </div>
 
     <div class="legal-section">
@@ -263,8 +263,18 @@
     </div>
 
     <div class="legal-section">
-      <h2>9. Suspension et Suppression de Compte</h2>
-      <h3>9.1 Suspension par WARABI</h3>
+      <h2>9. Géolocalisation en arrière-plan</h2>
+      <p>
+        En mode conducteur, l'application collecte votre position GPS en arrière-plan afin de détecter les passagers à proximité, même lorsque l'application n'est pas au premier plan. Cette collecte est active <strong>uniquement lorsque le mode conducteur est activé</strong> et s'arrête dès sa désactivation.
+      </p>
+      <p>
+        Vous pouvez révoquer cette autorisation à tout moment dans les paramètres de votre appareil, mais cela empêchera le bon fonctionnement du mode conducteur.
+      </p>
+    </div>
+
+    <div class="legal-section">
+      <h2>10. Suspension et Suppression de Compte</h2>
+      <h3>10.1 Suspension par WARABI</h3>
       <p>WARABI peut suspendre ou supprimer un compte en cas de :</p>
       <ul>
         <li>Violation des présentes CGU</li>
@@ -272,7 +282,7 @@
         <li>Fourniture de fausses informations</li>
         <li>Abus répétés du système d'annulation</li>
       </ul>
-      <h3>9.2 Suppression par l'utilisateur</h3>
+      <h3>10.2 Suppression par l'utilisateur</h3>
       <p>Tout utilisateur peut supprimer son compte à tout moment directement depuis les paramètres de l'application, section <strong>"Modifier le profil" → "Supprimer mon compte"</strong>. La suppression est définitive et entraîne l'effacement de toutes les données personnelles associées dans un délai de 30 jours, conformément au RGPD.</p>
       <div class="legal-highlight">
         <strong>Attention :</strong> En cas de solde positif sur votre portefeuille conducteur, pensez à effectuer un retrait avant de supprimer votre compte. Tout solde restant sera perdu après suppression définitive.
@@ -280,29 +290,34 @@
     </div>
 
     <div class="legal-section">
-      <h2>10. Propriété Intellectuelle</h2>
+      <h2>11. Propriété Intellectuelle</h2>
       <p>Tous les éléments du site et de l'application (logo, design, code, contenu...) sont protégés par le droit de la propriété intellectuelle. Toute reproduction, modification ou exploitation sans autorisation écrite préalable de WARABI est strictement interdite.</p>
     </div>
 
     <div class="legal-section">
-      <h2>11. Médiation</h2>
+      <h2>12. Médiation</h2>
       <p>
         Conformément aux dispositions du Code de la consommation, tout utilisateur a le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable du litige qui l'oppose à WARABI. En cas de litige non résolu par notre service client, vous pouvez saisir le médiateur compétent via la plateforme européenne de règlement en ligne des litiges : <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr</a>.
       </p>
     </div>
 
     <div class="legal-section">
-      <h2>12. Modifications</h2>
+      <h2>13. Modifications</h2>
       <p>WARABI peut modifier les CGU à tout moment. Les utilisateurs seront informés par notification dans l'application. La poursuite de l'utilisation de WARABI après modification vaut acceptation des nouvelles CGU.</p>
     </div>
 
     <div class="legal-section">
-      <h2>13. Droit applicable et Litiges</h2>
+      <h2>14. Force majeure</h2>
+      <p>WARABI ne pourra être tenu responsable de tout retard ou inexécution du service résultant d'un cas de force majeure au sens de l'article 1218 du Code civil (catastrophe naturelle, panne réseau généralisée, grève, décision gouvernementale, etc.).</p>
+    </div>
+
+    <div class="legal-section">
+      <h2>15. Droit applicable et Litiges</h2>
       <p>Les présentes CGU sont régies par le droit français. En cas de litige, et après tentative de résolution amiable, les tribunaux français sont seuls compétents.</p>
     </div>
 
     <div class="legal-section">
-      <h2>14. Contact</h2>
+      <h2>16. Contact</h2>
       <p>Pour toute question relative aux présentes CGU : <a href="mailto:support@warabi.app">support@warabi.app</a></p>
     </div>
 
